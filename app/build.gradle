@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+android {
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+
+    }
+
+    compileSdkVersion 27
+    buildToolsVersion '28.0.2'
+    defaultConfig {
+        applicationId "ormtransaction.example"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "0.0.1"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            minifyEnabled false
+            shrinkResources false
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
+        }
+        debug {
+
+        }
+    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+
+    maven { url "https://jitpack.io" }
+
+}
+
+configurations {
+    cleanedAnnotations
+    compile.exclude group: 'org.jetbrains' , module:'annotations'
+}
+
+dependencies {
+
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+
+    implementation 'com.reactiveandroid:reactiveandroid:1.4.3'
+
+}

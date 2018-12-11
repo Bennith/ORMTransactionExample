@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "94771076300",
+    "firebase_url": "https://thelakesfc-ab419.firebaseio.com",
+    "project_id": "thelakesfc-ab419",
+    "storage_bucket": "thelakesfc-ab419.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94771076300:android:b9de9406a8fca59a",
+        "android_client_info": {
+          "package_name": "app.sync.thelakesfc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94771076300-o4jc9e0au5q5pu2f61d3u9iefr3m24pu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.sync.thelakesfc",
+            "certificate_hash": "697210FDB1B328BBDC113730CE6C8F61A3AC51C3"
+          }
+        },
+        {
+          "client_id": "94771076300-aor3ldes3asrqf8pdkl4mi1336ard9ul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.sync.thelakesfc",
+            "certificate_hash": "1DAE9D293AC2E73B6ACD296CDD184574F758FB6E"
+          }
+        },
+        {
+          "client_id": "94771076300-5lj7vgc66gi7gc5irllihj6t4ceqft02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzHHw7NaRZB89RbbTPYjLp6-jNpy4Gjb0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94771076300-5lj7vgc66gi7gc5irllihj6t4ceqft02.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
