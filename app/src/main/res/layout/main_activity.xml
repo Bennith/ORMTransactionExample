@@ -158,6 +158,18 @@
                                                     android:padding="5dp"
                                                     android:layout_gravity="top|left"/>
 
+                                                <TextView
+                                                    android:id="@+id/processingTime"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text=""
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/white"
+                                                    android:textStyle="bold"
+                                                    android:textSize="15sp"
+                                                    android:padding="5dp"
+                                                    android:layout_gravity="top|left"/>
+
                                             </LinearLayout>
 
                                         </LinearLayout>

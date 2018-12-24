@@ -14,12 +14,15 @@ import android.widget.TextView;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
 import ormtransaction.example.R;
 import ormtransaction.example.application.core.MainApplication;
 import ormtransaction.example.application.orm.ORMDBHelpers;
+
+import static ormtransaction.example.application.orm.ORMDBHelpers.date;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -108,6 +111,8 @@ public class LoginActivity extends AppCompatActivity {
 
     public Boolean beginORMTransaction() {
 
+        MainApplication.startTime = ORMDBHelpers.dateFormat.format(new Date());
+
         boolean isCompleted = false;
         List<String> buildPassedData = new ArrayList<String>();
         int addRowsAmount = MainApplication.addRowsAmount;
@@ -173,6 +178,7 @@ public class LoginActivity extends AppCompatActivity {
 
             if(result){
 
+                MainApplication.endTime = ORMDBHelpers.dateFormat.format(new Date());
                 goToMainActivity();
 
             }else {

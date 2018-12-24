@@ -12,10 +12,16 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import ormtransaction.example.R;
+import ormtransaction.example.application.core.MainApplication;
 import ormtransaction.example.application.orm.ORMDBHelpers;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private Context context;
     View view;
     LinearLayout appbar;
-    TextView result;
+    TextView result,processingTime;
 
     //task
     Handler task = new Handler();
@@ -53,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
         if(getStatusBarHeight() !=0){
 
         }
+
+        processingTime = (TextView)findViewById(R.id.processingTime);
+        processingTime.setText(MainApplication.startTime + " / " + MainApplication.endTime);
 
         result = (TextView)findViewById(R.id.result);
         task_count = 0;

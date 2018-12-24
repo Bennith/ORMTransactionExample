@@ -92,6 +92,7 @@ public class ORMDBHelpers {
                 //endregion try db processing
 
                 if(MainApplication.useTransactions) {
+                    ReActiveAndroid.getDatabase(ORMAppDatabase.class).getWritableDatabase().setTransactionSuccessful();
                     ReActiveAndroid.getDatabase(ORMAppDatabase.class).endTransaction();
                 }
 
